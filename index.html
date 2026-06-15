@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HeavenMC</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<script>
+function copyIP() {
+    navigator.clipboard.writeText("heavensmp.my.id");
+    alert("IP HeavenMC berhasil disalin!");
+}
+</script>
+
+<a href="store.html" class="home-btn">
+    🛒 Buka Store
+</a>
+
+</div>
+
+<script>
+fetch("https://api.mcsrvstat.us/2/heavensmp.my.id:19131")
+.then(res => res.json())
+.then(data => {
+
+    if(data.online){
+        document.getElementById("status").innerHTML =
+        `🟢 Online<br>👥 ${data.players.online}/${data.players.max} Players`;
+    } else {
+        document.getElementById("status").innerHTML = "🔴 Offline";
+    }
+
+});
+</script>
+</body>
+</html>
+  <nav class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="store.html">🛒 Store</a>
+    <a href="rules.html">📜 Rules</a>
+    <a href="staff.html">👑 Staff</a>
+</nav>
+  
+    <div class="container">
+    <h1>🎮 buy rank/coin</h1>
+    <p>buy rank web</p>
+    
+    <div class="banner">
+    <div class="banner-overlay">
+        <h1>☁️ HeavenMC ☁️</h1>
+        <p>Survival • Economy • RPG</p>
+        <button class="play-btn" onclick="copyIP()">
+    🎮 PLAY NOW
+</button>
+    </div>
+</div>
+
+
+    <div class="server-status">
+    <h3>☁️ HeavenSMP Status</h3>
+    <div id="status">Loading...</div>
+</div>
+
+    <div class="owner-card">
+
+    <div class="owner-avatar">
+        👑
+    </div>
+
+    <h2>👑 Owner</h2>
+
+    <p>profcats</p>
+
+</div>
+
+    <a href="store.html" class="home-btn">
+        🛒 Buka Store
+    </a>
+
+</div>
+
+</body>
+</html>

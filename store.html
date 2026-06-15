@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HeavenSMP Store</title>
+
+    <link rel="icon" type="image/png" sizes="64x64" href="heavenmc_favicon_64.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html">🏠 Home</a>
+  <a href="store.html">🛒 Store</a>
+  <a href="rules.html">📜 Rules</a>
+  <a href="staff.html">👑 Staff</a>
+</nav>
+
+<div class="container">
+    <h1>🎮 buy rank/coin</h1>
+    <p>buy rank web</p>
+    
+    <div class="banner">
+    <div class="banner-overlay">
+        <h1>☁️ HeavenMC ☁️</h1>
+        <p>Survival • Economy • RPG</p>
+        <button type="button" class="play-btn" onclick="copyIP()">
+    🎮 PLAY NOW
+</button>
+    </div>
+</div>
+
+<div class="server-status"
+    <h3>☁️ HeavenSMP Status</h3>
+    <div id="status">Loading...</div>
+</div>
+
+<p id="copyMsg"></p>
+
+<div class="social-buttons">
+
+    <a href="https://discord.gg/MSnPkZqT2" target="_blank">
+        🎮 Discord
+    </a>
+
+    <a href="https://chat.whatsapp.com/IIfKO467PKx5q77XiNqivD?s=cl&p=a&ilr=2" target="_blank">
+        👥 Grup WA
+    </a>
+
+    <a href="https://whatsapp.com/channel/0029VbBCRvf3AzNOZG6J8n0J" target="_blank">
+        📢 Saluran WA
+    </a>
+
+</div>
+    
+<label>Category</label>
+<select id="category">
+    <option value="rank">Ranks</option>
+    <option value="coin">Coin</option>
+</select>
+
+<div id="rankSection">
+    <label>Pilih Rank</label>
+    <select id="rank">
+        <option value="-">-</option>
+        <option value="vip">VIP</option>
+        <option value="vip+">VIP+</option>
+        <option value="premium">Premium</option>
+        <option value="premium+">Premium+</option>
+    </select>
+</div>
+
+<div id="coinSection" style="display:none;">
+    <label>Pilih Coin</label>
+    <select id="coin">
+        <option>- Coin</option>
+        <option>50 Coin</option>
+        <option>100 Coin</option>
+        <option>300 Coin</option>
+        <option>500 Coin</option>
+    </select>
+</div>
+
+<label>gamertag</label>
+<input id="gamertag" type="text" placeholder="Masukkan gamertag">
+
+<div class="price-box">
+    <h3>Detail Pesanan</h3>
+
+    <p>Produk : <span id="produkText">-</span></p>
+    <p>Harga : <span id="hargaText">-</span></p>
+</div>
+
+<button id="btn">Pesan sekarang</button>
+<label>note: jangan sampai salah saat memasukan gamertag.</label>
+
+</div>
+
+<script>
+console.log(document.getElementById("rank"));
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
+
